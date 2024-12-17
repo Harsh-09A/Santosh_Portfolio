@@ -47,6 +47,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
 
+    <!-- swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11.1.15/swiper-bundle.min.css"
+      rel="stylesheet" />
+
     <!-- Fancy Box CDN -->
     <script
       defer
@@ -57,31 +63,29 @@
 
     <!-- Custom CSS & JS  -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/common.css" />
+    <!-- <link rel="stylesheet" href="css/style2.css" /> -->
     <script defer src="js/script.js"></script>
   </head>
-  <body
-    data-bs-spy="scroll"
-    data-bs-target="#main-navbar"
-    data-bs-root-margin="0px 0px -50%"
-    data-bs-smooth-scroll="true"
-    class="scrollspy"
-    tabindex="0"
-    data-offset="1">
-    <main>
+  <body>
+    <header>
       <section class="container-fluid p-0 m-0 header_section">
         <div class="header">
           <img class="logo" src="img/logo/Santosh_Property_Logo.png" alt="" />
         </div>
       </section>
-      <!--  -->
+    </header>
+    <main>
+      <!-- Profile  -->
       <section class="container p-0 m-0 profile_section">
         <div class="row m-0">
           <div class="col-3">
-            <img class="profile_img" src="img/overview/profile.jpg" alt="" />
+            <img
+              class="profile_img"
+              src="img/overview/person placeholder.jpg"
+              alt="" />
           </div>
           <div class="col-9 profile_details">
-            <h1 class="profile_name">Santosh Property</h1>
+            <h1 class="profile_name">Mr. Santosh Dhandrut</h1>
             <p class="profile_para">
               Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
               consectetur.
@@ -100,7 +104,7 @@
             </li>
             <li>
               <div class="icon-single" id="hs-1">
-                <a href="#" target="_blank">
+                <a href="https://wa.me/+910000000000" target="_blank">
                   <!-- <i class="fab fa-whatsapp fa-lg"></i> -->
                   <img src="img/logo/whatsapp_icon.svg" alt="" />
                 </a>
@@ -132,8 +136,534 @@
           </ul>
         </div>
       </section>
+      <!-- About Us -->
+      <section class="container p-0 m-0 about_section">
+        <div class="profile_details">
+          <h1 class="profile_name">About Us</h1>
+          <p class="profile_para">
+            Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
+            consectetur.Lorem ipsum dolor sit amet consectetur. Lorem ipsum
+            Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
+            consectetur.Lorem ipsum dolor sit amet consectetur. Lorem ipsum
+          </p>
+        </div>
+      </section>
+
+      <!--Buttons  -->
+      <section class="container p-0 m-0 buttons_section">
+        <div class="buttons_wrapper">
+          <div class="round-btns" id="round-btns">
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <!--  -->
+                <div class="col-5 btn-parent">
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#awardsModal"
+                    class="btn btn-md btn-danger btn-danger-custom w-100 h-100">
+                    <i class="fas fa-award fa-lg"></i>
+                    <strong class="flex-fill mx-1 text-nowrap"> Awards </strong>
+                  </a>
+                </div>
+                <!--  -->
+                <div class="col-5 btn-parent">
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#galleryModal"
+                    class="btn btn-md btn-danger btn-danger-custom w-100 h-100">
+                    <!-- <img src="img/logo/add_contact.png" alt="" /> -->
+                    <i class="fas fa-images fa-lg"></i>
+                    <strong class="flex-fill mx-1 text-nowrap">
+                      Gallery
+                    </strong>
+                  </a>
+                </div>
+                <!--  -->
+                <div class="col-5 btn-parent">
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#testimonialsModal"
+                    class="btn btn-md btn-danger btn-danger-custom w-100 h-100">
+                    <!-- <img src="img/logo/add_contact.png" alt="" /> -->
+                    <i class="fas fa-comment fa-lg"></i>
+                    <strong class="flex-fill mx-1 text-nowrap">
+                      Our Testimonials
+                    </strong>
+                  </a>
+                </div>
+                <!--  -->
+                <div class="col-5 btn-parent">
+                  <a
+                    data-bs-toggle="modal"
+                    data-bs-target="#teamsModal"
+                    class="btn btn-md btn-danger btn-danger-custom w-100 h-100">
+                    <!-- <img src="img/logo/add_contact.png" alt="" /> -->
+                    <i class="fas fa-people-group fa-lg"></i>
+                    <strong class="flex-fill mx-1 text-nowrap">
+                      Our Team
+                    </strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects_section" class="container py-0">
+        <h2 class="section-heading text-center text-uppercase pt-4">
+          Our Top Projects
+        </h2>
+        <div class="section-content">
+          <div class="container pb-3">
+            <div class="row">
+              <div class="col-md-3 mt-5">
+                <div class="card property_card">
+                  <img
+                    src="img/projects/SAI_WORLD_CITY.webp"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title property_name">SAI WORLD CITY</h5>
+                    <p class="card-text property_location">Panvel</p>
+                    <a
+                      href="https://santoshproperty.in/properties/sai-world-city/"
+                      target="_blank"
+                      class="btn btn-danger btn-custom">
+                      View Details
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 mt-5">
+                <div class="card property_card">
+                  <img
+                    src="img/projects/SATYAM_QUEEN_NECKLACE.webp"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title property_name">
+                      SATYAM QUEEN NECKLACE
+                    </h5>
+                    <p class="card-text property_location">Upper Kharghar</p>
+                    <a
+                      href="https://santoshproperty.in/properties/satyam-queen-necklace/"
+                      target="_blank"
+                      class="btn btn-danger btn-custom">
+                      View Details
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 mt-5">
+                <div class="card property_card">
+                  <img
+                    src="img/projects/WADHWA_WISE_CITY.webp"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title property_name">WADHWA WISE CITY</h5>
+                    <p class="card-text property_location">New Panvel</p>
+                    <a
+                      href="https://santoshproperty.in/properties/wadhwa-wise-city/"
+                      target="_blank"
+                      class="btn btn-danger btn-custom">
+                      View Details
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 mt-5">
+                <div class="card property_card">
+                  <img
+                    src="img/projects/DELTA_PLAM_BEACH.webp"
+                    class="card-img-top"
+                    alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title property_name">DELTA PLAM BEACH</h5>
+                    <p class="card-text property_location">Seawoods</p>
+                    <a
+                      href="https://santoshproperty.in/properties/delta-plam-beach/"
+                      target="_blank"
+                      class="btn btn-danger btn-custom">
+                      View Details
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Top Locations  -->
+      <section class="container p-0 m-0 buttons_section_2">
+        <h2 class="section-heading text-center text-uppercase pt-4">
+          Our Top Locations
+        </h2>
+        <div class="buttons_wrapper">
+          <div class="round-btns" id="round-btns">
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="col-3 btn-parent">
+                  <a
+                    href="https://santoshproperty.in/city/kharghar/"
+                    target="_blank"
+                    class="btn btn-md btn-danger btn-danger-custom w-100 h-100">
+                    <strong class="flex-fill mx-1 text-nowrap">
+                      Kharghar
+                    </strong>
+                  </a>
+                </div>
+
+                <div class="col-3 btn-parent">
+                  <a
+                    href="https://santoshproperty.in/city/panvel/"
+                    target="_blank"
+                    class="btn btn-md btn-danger btn-danger-custom w-100 h-100">
+                    <strong class="flex-fill mx-1 text-nowrap"> Panvel </strong>
+                  </a>
+                </div>
+
+                <div class="col-3 btn-parent">
+                  <a
+                    href="https://santoshproperty.in/city/seawoods/"
+                    target="_blank"
+                    class="btn btn-md btn-danger btn-danger-custom w-100 h-100">
+                    <strong class="flex-fill mx-1 text-nowrap">
+                      Seawoods
+                    </strong>
+                  </a>
+                </div>
+
+                <div class="col-3 btn-parent">
+                  <a
+                    href="https://santoshproperty.in/city/roadpali/"
+                    target="_blank"
+                    class="btn btn-md btn-danger btn-danger-custom w-100 h-100">
+                    <strong class="flex-fill mx-1 text-nowrap">
+                      Roadpali
+                    </strong>
+                  </a>
+                </div>
+
+                <div class="col-3 btn-parent">
+                  <a
+                    href="https://santoshproperty.in/city/vashi/"
+                    target="_blank"
+                    class="btn btn-md btn-danger btn-danger-custom w-100 h-100">
+                    <strong class="flex-fill mx-1 text-nowrap"> Vashi </strong>
+                  </a>
+                </div>
+
+                <div class="col-3 btn-parent">
+                  <a
+                    href="https://santoshproperty.in/city/cbd-belapur/"
+                    target="_blank"
+                    class="btn btn-md btn-danger btn-danger-custom w-100 h-100">
+                    <strong class="flex-fill mx-1 text-nowrap">
+                      Belapur
+                    </strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <div class="buttons_wrapper mb-4">
+        <div class="round-btns" id="round-btns">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-1 btn-parent btn-parent-2">
+                <a
+                  href="https://www.facebook.com/santoshproperties"
+                  target="_blank"
+                  class="btn btn-md btn-danger btn-danger-custom w-100 h-100">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </div>
+
+              <div class="col-1 btn-parent btn-parent-2">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  class="btn btn-md btn-danger btn-danger-custom w-100 h-100">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+
+              <div class="col-1 btn-parent btn-parent-2">
+                <a
+                  href="https://x.com/"
+                  target="_blank"
+                  class="btn btn-md btn-danger btn-danger-custom w-100 h-100">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <!-- Modals -->
+
+    <!-- Awards Modal  -->
+    <div
+      class="modal fade"
+      id="awardsModal"
+      tabindex="-1"
+      aria-labelledby="ModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Title -->
+          <div class="modal-header">
+            <!-- <h1 class="modal-title fs-5" id="ModalLabel">Testimonials</h1> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <h2 class="section-heading text-center text-uppercase pt-3">
+              Awards
+            </h2>
+            <img class="img-fluid" src="img/overview/certificate.jpg" alt="" />
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Modal  -->
+    <div
+      class="modal fade"
+      id="galleryModal"
+      tabindex="-1"
+      aria-labelledby="ModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Title -->
+          <div class="modal-header">
+            <!-- <h1 class="modal-title fs-5" id="ModalLabel">Testimonials</h1> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <h2 class="section-heading text-center text-uppercase pt-3">
+              Gallery
+            </h2>
+            <!-- Gallery Section -->
+            <section
+              id="gallery_section"
+              class="container py-3 bg-body-tertiary">
+              <div class="section-content">
+                <div class="container my-5 pb-3">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="gall">
+                        <img
+                          src="img/gallery/gallery1.jpg"
+                          class="img-fluid"
+                          data-fancybox="gallery"
+                          data-src="img/gallery/gallery1.jpg" />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="gall">
+                        <img
+                          src="img/gallery/gallery2.jpg"
+                          class="img-fluid"
+                          data-fancybox="gallery"
+                          data-src="img/gallery/gallery2.jpg" />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="gall">
+                        <img
+                          src="img/gallery/gallery3.jpg"
+                          class="img-fluid"
+                          data-fancybox="gallery"
+                          data-src="img/gallery/gallery3.jpg" />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="gall">
+                        <img
+                          src="img/gallery/gallery4.jpg"
+                          class="img-fluid"
+                          data-fancybox="gallery"
+                          data-src="img/gallery/gallery4.jpg" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Gallery Section Ends -->
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial Modal  -->
+    <div
+      class="modal fade"
+      id="testimonialsModal"
+      tabindex="-1"
+      aria-labelledby="ModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Title -->
+          <div class="modal-header">
+            <!-- <h1 class="modal-title fs-5" id="ModalLabel">Testimonials</h1> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <section class="testimonial-section" id="testimonials">
+              <h2 class="section-heading text-center text-uppercase pt-3">
+                Testimonial
+              </h2>
+              <div class="container">
+                <div class="swiper testimonial-wrapper grid-col-3">
+                  <div class="swiper-wrapper">
+                    <!-- 1 -->
+                    <div class="swiper-slide testimonial-items">
+                      <p class="testimonial-text">
+                        Discovering Be Better was a game-changer! Their
+                        unmatched expertise skyrocketed my online presence and
+                        credibility. Highly recommended
+                      </p>
+                      <h3 class="testimonial-title">Amy</h3>
+                      <div class="review-stars"></div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="swiper-slide testimonial-items">
+                      <p class="testimonial-text">
+                        Thanks to Be Better, I've unlocked my true potential and
+                        transformed how others perceive me. Their tailored
+                        strategies are a must for anyone looking to stand out!
+                      </p>
+                      <h3 class="testimonial-title">Jhon</h3>
+                      <div class="review-stars"></div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="swiper-slide testimonial-items">
+                      <p class="testimonial-text">
+                        Working with Be Better, was one of the best career
+                        decisions I've made. Their dedication resulted in a
+                        brand identity that truly resonates with my audience.
+                        Invest in your personal brand with them – you won't
+                        regret it!
+                      </p>
+                      <h3 class="testimonial-title">Katie</h3>
+                      <div class="review-stars"></div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="swiper-slide testimonial-items">
+                      <p class="testimonial-text">
+                        Discovering Be Better was a game-changer! Their
+                        unmatched expertise skyrocketed my online presence and
+                        credibility. Highly recommended
+                      </p>
+                      <h3 class="testimonial-title">Amy</h3>
+                      <div class="review-stars"></div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="swiper-slide testimonial-items">
+                      <p class="testimonial-text">
+                        Thanks to Be Better, I've unlocked my true potential and
+                        transformed how others perceive me. Their tailored
+                        strategies are a must for anyone looking to stand out!
+                      </p>
+                      <h3 class="testimonial-title">Jhon</h3>
+                      <div class="review-stars"></div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="swiper-slide testimonial-items">
+                      <p class="testimonial-text">
+                        Working with Be Better, was one of the best career
+                        decisions I've made. Their dedication resulted in a
+                        brand identity that truly resonates with my audience.
+                        Invest in your personal brand with them – you won't
+                        regret it!
+                      </p>
+                      <h3 class="testimonial-title">Katie</h3>
+                      <div class="review-stars"></div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Teams Modal  -->
+    <div
+      class="modal fade"
+      id="teamsModal"
+      tabindex="-1"
+      aria-labelledby="ModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Title -->
+          <div class="modal-header">
+            <!-- <h1 class="modal-title fs-5" id="ModalLabel">Testimonials</h1> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <h2 class="section-heading text-center text-uppercase pt-3">
+              Teams
+            </h2>
+            <img class="img-fluid" src="img/overview/teams.jpg" alt="" />
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
-
-<ul></ul>
